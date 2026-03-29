@@ -2,10 +2,9 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("CI/CD Pipeline Working 🚀");
+  res.send("CI/CD Working 🚀");
 });
 
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
-
-module.exports = app;
+app.listen(3000, () => {
+  console.log("Server running on 3000");
+});
